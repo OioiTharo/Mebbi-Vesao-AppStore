@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B2CA19C2CC97BDA00D15A9E /* coresEscolha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2CA19B2CC97BDA00D15A9E /* coresEscolha.swift */; };
+		3B33763C2CC81CE0006BAF61 /* tabBarAnotacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B33763B2CC81CE0006BAF61 /* tabBarAnotacao.swift */; };
+		3B3376402CC82BDC006BAF61 /* categoriaFlashcards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B33763F2CC82BDC006BAF61 /* categoriaFlashcards.swift */; };
+		3B3465132CF1085800D999AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3465122CF1085800D999AD /* AppDelegate.swift */; };
+		3B4D40332CE54C5B00F8E50D /* TermosDeUso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D40322CE54C5B00F8E50D /* TermosDeUso.swift */; };
+		3B4DB7A52CCACCE100FB9D9B /* FlashCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4DB7A42CCACCE100FB9D9B /* FlashCardView.swift */; };
+		3B4DB7A72CCACE7D00FB9D9B /* cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4DB7A62CCACE7D00FB9D9B /* cards.swift */; };
+		3B4DB7A92CCAD13900FB9D9B /* listCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4DB7A82CCAD13900FB9D9B /* listCard.swift */; };
+		3B4DB7AB2CCADEBF00FB9D9B /* progressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4DB7AA2CCADEBF00FB9D9B /* progressBar.swift */; };
+		3B4DB7AD2CCAE33B00FB9D9B /* editCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4DB7AC2CCAE33B00FB9D9B /* editCard.swift */; };
+		3B53E9012CC81ABE0026526B /* botaoVoltar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53E9002CC81ABE0026526B /* botaoVoltar.swift */; };
+		3B5852642CD15984007FA0B1 /* MeusFlashCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5852632CD15984007FA0B1 /* MeusFlashCardView.swift */; };
+		3B5852662CD163DF007FA0B1 /* AnotationFlashCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5852652CD163DF007FA0B1 /* AnotationFlashCardsView.swift */; };
+		3B58526B2CD18226007FA0B1 /* categoriaStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B58526A2CD18226007FA0B1 /* categoriaStore.swift */; };
+		3B58526D2CD18300007FA0B1 /* dataRepeticao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B58526C2CD18300007FA0B1 /* dataRepeticao.swift */; };
+		3B58526F2CD18424007FA0B1 /* flashCardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B58526E2CD18424007FA0B1 /* flashCardManager.swift */; };
+		3B5B5FB12CE3C9F800C1BF4E /* AnotationAnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5B5FB02CE3C9F800C1BF4E /* AnotationAnotationView.swift */; };
+		3B5B5FB52CE3DDB800C1BF4E /* tabBarSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5B5FB42CE3DDB800C1BF4E /* tabBarSettings.swift */; };
+		3B5B5FB72CE3DDEA00C1BF4E /* TabBarCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5B5FB62CE3DDEA00C1BF4E /* TabBarCustom.swift */; };
+		3B5B5FB92CE3DE1600C1BF4E /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5B5FB82CE3DE1600C1BF4E /* CustomTabBar.swift */; };
+		3B5B5FBB2CE3DE3D00C1BF4E /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5B5FBA2CE3DE3D00C1BF4E /* TabButton.swift */; };
+		3B617A952CE68693000BA198 /* permissaoNotificacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B617A942CE68693000BA198 /* permissaoNotificacao.swift */; };
+		3B617A972CE686F8000BA198 /* NotificacaoHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B617A962CE686F8000BA198 /* NotificacaoHandler.swift */; };
+		3B6B56D42CD94B47009CB864 /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6B56D22CD94B47009CB864 /* OnboardView.swift */; };
+		3B6B56D52CD94B47009CB864 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B6B56D32CD94B47009CB864 /* LaunchScreen.storyboard */; };
+		3B6B56D72CD9510F009CB864 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6B56D62CD9510F009CB864 /* RootView.swift */; };
+		3B7626532CEFD93D0074BFA2 /* TextViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7626522CEFD93D0074BFA2 /* TextViewRepresentable.swift */; };
+		3B8666062CD2A75E0074DD5F /* anotationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8666052CD2A75E0074DD5F /* anotationStore.swift */; };
+		3B8666082CD2B6B20074DD5F /* color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8666072CD2B6B20074DD5F /* color.swift */; };
+		3BA391272CDE81BF00146EF1 /* flipSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3BA391262CDE81BF00146EF1 /* flipSound.mp3 */; };
+		4A322FD42CD1563D000017C2 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A322FD32CD1563D000017C2 /* ImagePicker.swift */; };
+		4AC3B2D62CD0049B0086BBB6 /* FlashcardSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC3B2D52CD0049B0086BBB6 /* FlashcardSheet.swift */; };
+		4AE45A1F2CC6E3BD0084006A /* MebbiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE45A1E2CC6E3BD0084006A /* MebbiApp.swift */; };
+		4AE45A212CC6E3BD0084006A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE45A202CC6E3BD0084006A /* ContentView.swift */; };
+		4AE45A232CC6E3BE0084006A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AE45A222CC6E3BE0084006A /* Assets.xcassets */; };
+		4AE45A262CC6E3BE0084006A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AE45A252CC6E3BE0084006A /* Preview Assets.xcassets */; };
+		4AE45A2B2CC6E3BE0084006A /* Mebbi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4AE45A292CC6E3BE0084006A /* Mebbi.xcdatamodeld */; };
+		4AE45A342CC6E4D90084006A /* NovaAnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE45A332CC6E4D90084006A /* NovaAnotationView.swift */; };
+		4AE45A362CC6E5010084006A /* VisualizarAnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE45A352CC6E5010084006A /* VisualizarAnotationView.swift */; };
+		4AE45A382CC6E5200084006A /* DetalhesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE45A372CC6E5200084006A /* DetalhesView.swift */; };
+		4AE45A3A2CC6E5500084006A /* SelecionarCategoriaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE45A392CC6E5500084006A /* SelecionarCategoriaView.swift */; };
+		4AE45A3C2CC6E5990084006A /* CategoriaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE45A3B2CC6E5990084006A /* CategoriaView.swift */; };
+		4AE45A3E2CC6E5B20084006A /* CategoriaSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE45A3D2CC6E5B20084006A /* CategoriaSheet.swift */; };
+		4AE45A402CC6E5CF0084006A /* RepeticaoSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE45A3F2CC6E5CF0084006A /* RepeticaoSheet.swift */; };
+		4AE45A432CC6E5FF0084006A /* itemLista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE45A422CC6E5FF0084006A /* itemLista.swift */; };
+		4AE45A452CC6E6170084006A /* navBarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE45A442CC6E6170084006A /* navBarMenu.swift */; };
+		4AE45A492CC6E6720084006A /* barraDePesquisa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE45A482CC6E6720084006A /* barraDePesquisa.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3B2CA19B2CC97BDA00D15A9E /* coresEscolha.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coresEscolha.swift; sourceTree = "<group>"; };
+		3B33763B2CC81CE0006BAF61 /* tabBarAnotacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBarAnotacao.swift; sourceTree = "<group>"; };
+		3B33763F2CC82BDC006BAF61 /* categoriaFlashcards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoriaFlashcards.swift; sourceTree = "<group>"; };
+		3B3465122CF1085800D999AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B4D40322CE54C5B00F8E50D /* TermosDeUso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermosDeUso.swift; sourceTree = "<group>"; };
+		3B4DB7A42CCACCE100FB9D9B /* FlashCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardView.swift; sourceTree = "<group>"; };
+		3B4DB7A62CCACE7D00FB9D9B /* cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cards.swift; sourceTree = "<group>"; };
+		3B4DB7A82CCAD13900FB9D9B /* listCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listCard.swift; sourceTree = "<group>"; };
+		3B4DB7AA2CCADEBF00FB9D9B /* progressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = progressBar.swift; sourceTree = "<group>"; };
+		3B4DB7AC2CCAE33B00FB9D9B /* editCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editCard.swift; sourceTree = "<group>"; };
+		3B53E9002CC81ABE0026526B /* botaoVoltar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = botaoVoltar.swift; sourceTree = "<group>"; };
+		3B5852632CD15984007FA0B1 /* MeusFlashCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeusFlashCardView.swift; sourceTree = "<group>"; };
+		3B5852652CD163DF007FA0B1 /* AnotationFlashCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotationFlashCardsView.swift; sourceTree = "<group>"; };
+		3B58526A2CD18226007FA0B1 /* categoriaStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoriaStore.swift; sourceTree = "<group>"; };
+		3B58526C2CD18300007FA0B1 /* dataRepeticao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataRepeticao.swift; sourceTree = "<group>"; };
+		3B58526E2CD18424007FA0B1 /* flashCardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flashCardManager.swift; sourceTree = "<group>"; };
+		3B5B5FB02CE3C9F800C1BF4E /* AnotationAnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotationAnotationView.swift; sourceTree = "<group>"; };
+		3B5B5FB42CE3DDB800C1BF4E /* tabBarSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBarSettings.swift; sourceTree = "<group>"; };
+		3B5B5FB62CE3DDEA00C1BF4E /* TabBarCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCustom.swift; sourceTree = "<group>"; };
+		3B5B5FB82CE3DE1600C1BF4E /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		3B5B5FBA2CE3DE3D00C1BF4E /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
+		3B617A942CE68693000BA198 /* permissaoNotificacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = permissaoNotificacao.swift; sourceTree = "<group>"; };
+		3B617A962CE686F8000BA198 /* NotificacaoHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificacaoHandler.swift; sourceTree = "<group>"; };
+		3B6B56D22CD94B47009CB864 /* OnboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
+		3B6B56D32CD94B47009CB864 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B6B56D62CD9510F009CB864 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		3B7626522CEFD93D0074BFA2 /* TextViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewRepresentable.swift; sourceTree = "<group>"; };
+		3B8666052CD2A75E0074DD5F /* anotationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = anotationStore.swift; sourceTree = "<group>"; };
+		3B8666072CD2B6B20074DD5F /* color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = color.swift; sourceTree = "<group>"; };
+		3BA391262CDE81BF00146EF1 /* flipSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = flipSound.mp3; sourceTree = "<group>"; };
+		4A322FD32CD1563D000017C2 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		4AC3B2D52CD0049B0086BBB6 /* FlashcardSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardSheet.swift; sourceTree = "<group>"; };
+		4AE45A1B2CC6E3BD0084006A /* Mebbi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mebbi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AE45A1E2CC6E3BD0084006A /* MebbiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MebbiApp.swift; sourceTree = "<group>"; };
+		4AE45A202CC6E3BD0084006A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4AE45A222CC6E3BE0084006A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4AE45A252CC6E3BE0084006A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4AE45A2A2CC6E3BE0084006A /* Mebbi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mebbi.xcdatamodel; sourceTree = "<group>"; };
+		4AE45A2C2CC6E3BE0084006A /* Mebbi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mebbi.entitlements; sourceTree = "<group>"; };
+		4AE45A2D2CC6E3BE0084006A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AE45A332CC6E4D90084006A /* NovaAnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaAnotationView.swift; sourceTree = "<group>"; };
+		4AE45A352CC6E5010084006A /* VisualizarAnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualizarAnotationView.swift; sourceTree = "<group>"; };
+		4AE45A372CC6E5200084006A /* DetalhesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesView.swift; sourceTree = "<group>"; };
+		4AE45A392CC6E5500084006A /* SelecionarCategoriaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelecionarCategoriaView.swift; sourceTree = "<group>"; };
+		4AE45A3B2CC6E5990084006A /* CategoriaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaView.swift; sourceTree = "<group>"; };
+		4AE45A3D2CC6E5B20084006A /* CategoriaSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaSheet.swift; sourceTree = "<group>"; };
+		4AE45A3F2CC6E5CF0084006A /* RepeticaoSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeticaoSheet.swift; sourceTree = "<group>"; };
+		4AE45A422CC6E5FF0084006A /* itemLista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemLista.swift; sourceTree = "<group>"; };
+		4AE45A442CC6E6170084006A /* navBarMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navBarMenu.swift; sourceTree = "<group>"; };
+		4AE45A482CC6E6720084006A /* barraDePesquisa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = barraDePesquisa.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4AE45A182CC6E3BD0084006A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B5852672CD177B2007FA0B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4AE45A1E2CC6E3BD0084006A /* MebbiApp.swift */,
+				4A322FD32CD1563D000017C2 /* ImagePicker.swift */,
+				3B58526E2CD18424007FA0B1 /* flashCardManager.swift */,
+				3B58526A2CD18226007FA0B1 /* categoriaStore.swift */,
+				3B8666052CD2A75E0074DD5F /* anotationStore.swift */,
+				3B8666072CD2B6B20074DD5F /* color.swift */,
+				3B5B5FB42CE3DDB800C1BF4E /* tabBarSettings.swift */,
+				3B617A962CE686F8000BA198 /* NotificacaoHandler.swift */,
+				3B7626522CEFD93D0074BFA2 /* TextViewRepresentable.swift */,
+				3B3465122CF1085800D999AD /* AppDelegate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3B5852682CD177BB007FA0B1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3B617A942CE68693000BA198 /* permissaoNotificacao.swift */,
+				4AE45A372CC6E5200084006A /* DetalhesView.swift */,
+				4AE45A3B2CC6E5990084006A /* CategoriaView.swift */,
+				4AE45A3D2CC6E5B20084006A /* CategoriaSheet.swift */,
+				3B58526C2CD18300007FA0B1 /* dataRepeticao.swift */,
+				3B6B56D62CD9510F009CB864 /* RootView.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3B5852692CD177C9007FA0B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4AE45A202CC6E3BD0084006A /* ContentView.swift */,
+				4AE45A352CC6E5010084006A /* VisualizarAnotationView.swift */,
+				3B4DB7A42CCACCE100FB9D9B /* FlashCardView.swift */,
+				4AC3B2D52CD0049B0086BBB6 /* FlashcardSheet.swift */,
+				4AE45A392CC6E5500084006A /* SelecionarCategoriaView.swift */,
+				3B5852652CD163DF007FA0B1 /* AnotationFlashCardsView.swift */,
+				3B5B5FB02CE3C9F800C1BF4E /* AnotationAnotationView.swift */,
+				3B5852632CD15984007FA0B1 /* MeusFlashCardView.swift */,
+				4AE45A3F2CC6E5CF0084006A /* RepeticaoSheet.swift */,
+				3B6B56D32CD94B47009CB864 /* LaunchScreen.storyboard */,
+				3B6B56D22CD94B47009CB864 /* OnboardView.swift */,
+				4AE45A332CC6E4D90084006A /* NovaAnotationView.swift */,
+				3B4D40322CE54C5B00F8E50D /* TermosDeUso.swift */,
+				4AE45A412CC6E5EB0084006A /* Components */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B5B5FBC2CE3DE5800C1BF4E /* TabBarView */ = {
+			isa = PBXGroup;
+			children = (
+				3B5B5FB62CE3DDEA00C1BF4E /* TabBarCustom.swift */,
+				3B5B5FB82CE3DE1600C1BF4E /* CustomTabBar.swift */,
+				3B5B5FBA2CE3DE3D00C1BF4E /* TabButton.swift */,
+			);
+			path = TabBarView;
+			sourceTree = "<group>";
+		};
+		4AE45A122CC6E3BD0084006A = {
+			isa = PBXGroup;
+			children = (
+				4AE45A1D2CC6E3BD0084006A /* Mebbi */,
+				4AE45A1C2CC6E3BD0084006A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4AE45A1C2CC6E3BD0084006A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4AE45A1B2CC6E3BD0084006A /* Mebbi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4AE45A1D2CC6E3BD0084006A /* Mebbi */ = {
+			isa = PBXGroup;
+			children = (
+				3B5852692CD177C9007FA0B1 /* View */,
+				3B5852682CD177BB007FA0B1 /* ViewModel */,
+				3B5852672CD177B2007FA0B1 /* Model */,
+				4AE45A222CC6E3BE0084006A /* Assets.xcassets */,
+				3BA391262CDE81BF00146EF1 /* flipSound.mp3 */,
+				4AE45A2C2CC6E3BE0084006A /* Mebbi.entitlements */,
+				4AE45A2D2CC6E3BE0084006A /* Info.plist */,
+				4AE45A292CC6E3BE0084006A /* Mebbi.xcdatamodeld */,
+				4AE45A242CC6E3BE0084006A /* Preview Content */,
+			);
+			path = Mebbi;
+			sourceTree = "<group>";
+		};
+		4AE45A242CC6E3BE0084006A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4AE45A252CC6E3BE0084006A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4AE45A412CC6E5EB0084006A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4AE45A422CC6E5FF0084006A /* itemLista.swift */,
+				4AE45A442CC6E6170084006A /* navBarMenu.swift */,
+				4AE45A482CC6E6720084006A /* barraDePesquisa.swift */,
+				3B53E9002CC81ABE0026526B /* botaoVoltar.swift */,
+				3B33763B2CC81CE0006BAF61 /* tabBarAnotacao.swift */,
+				3B4DB7AA2CCADEBF00FB9D9B /* progressBar.swift */,
+				3B33763F2CC82BDC006BAF61 /* categoriaFlashcards.swift */,
+				3B2CA19B2CC97BDA00D15A9E /* coresEscolha.swift */,
+				3B4DB7A62CCACE7D00FB9D9B /* cards.swift */,
+				3B4DB7A82CCAD13900FB9D9B /* listCard.swift */,
+				3B4DB7AC2CCAE33B00FB9D9B /* editCard.swift */,
+				3B5B5FBC2CE3DE5800C1BF4E /* TabBarView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4AE45A1A2CC6E3BD0084006A /* Mebbi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AE45A302CC6E3BE0084006A /* Build configuration list for PBXNativeTarget "Mebbi" */;
+			buildPhases = (
+				4AE45A172CC6E3BD0084006A /* Sources */,
+				4AE45A182CC6E3BD0084006A /* Frameworks */,
+				4AE45A192CC6E3BD0084006A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mebbi;
+			productName = Mebbi;
+			productReference = 4AE45A1B2CC6E3BD0084006A /* Mebbi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4AE45A132CC6E3BD0084006A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					4AE45A1A2CC6E3BD0084006A = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 4AE45A162CC6E3BD0084006A /* Build configuration list for PBXProject "Mebbi" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4AE45A122CC6E3BD0084006A;
+			productRefGroup = 4AE45A1C2CC6E3BD0084006A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4AE45A1A2CC6E3BD0084006A /* Mebbi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4AE45A192CC6E3BD0084006A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B6B56D52CD94B47009CB864 /* LaunchScreen.storyboard in Resources */,
+				4AE45A262CC6E3BE0084006A /* Preview Assets.xcassets in Resources */,
+				4AE45A232CC6E3BE0084006A /* Assets.xcassets in Resources */,
+				3BA391272CDE81BF00146EF1 /* flipSound.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4AE45A172CC6E3BD0084006A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B3465132CF1085800D999AD /* AppDelegate.swift in Sources */,
+				3B6B56D72CD9510F009CB864 /* RootView.swift in Sources */,
+				4AE45A2B2CC6E3BE0084006A /* Mebbi.xcdatamodeld in Sources */,
+				3B58526B2CD18226007FA0B1 /* categoriaStore.swift in Sources */,
+				4AE45A382CC6E5200084006A /* DetalhesView.swift in Sources */,
+				3B58526D2CD18300007FA0B1 /* dataRepeticao.swift in Sources */,
+				3B4DB7AB2CCADEBF00FB9D9B /* progressBar.swift in Sources */,
+				4AE45A212CC6E3BD0084006A /* ContentView.swift in Sources */,
+				4AE45A3C2CC6E5990084006A /* CategoriaView.swift in Sources */,
+				4AE45A3E2CC6E5B20084006A /* CategoriaSheet.swift in Sources */,
+				3B4DB7A92CCAD13900FB9D9B /* listCard.swift in Sources */,
+				3B8666062CD2A75E0074DD5F /* anotationStore.swift in Sources */,
+				3B5B5FB72CE3DDEA00C1BF4E /* TabBarCustom.swift in Sources */,
+				4AC3B2D62CD0049B0086BBB6 /* FlashcardSheet.swift in Sources */,
+				3B4DB7A52CCACCE100FB9D9B /* FlashCardView.swift in Sources */,
+				3B5852662CD163DF007FA0B1 /* AnotationFlashCardsView.swift in Sources */,
+				4AE45A342CC6E4D90084006A /* NovaAnotationView.swift in Sources */,
+				3B53E9012CC81ABE0026526B /* botaoVoltar.swift in Sources */,
+				4AE45A492CC6E6720084006A /* barraDePesquisa.swift in Sources */,
+				4AE45A362CC6E5010084006A /* VisualizarAnotationView.swift in Sources */,
+				3B5B5FB12CE3C9F800C1BF4E /* AnotationAnotationView.swift in Sources */,
+				4AE45A402CC6E5CF0084006A /* RepeticaoSheet.swift in Sources */,
+				4AE45A1F2CC6E3BD0084006A /* MebbiApp.swift in Sources */,
+				4A322FD42CD1563D000017C2 /* ImagePicker.swift in Sources */,
+				3B4D40332CE54C5B00F8E50D /* TermosDeUso.swift in Sources */,
+				4AE45A432CC6E5FF0084006A /* itemLista.swift in Sources */,
+				3B4DB7A72CCACE7D00FB9D9B /* cards.swift in Sources */,
+				3B58526F2CD18424007FA0B1 /* flashCardManager.swift in Sources */,
+				3B5B5FBB2CE3DE3D00C1BF4E /* TabButton.swift in Sources */,
+				3B5B5FB52CE3DDB800C1BF4E /* tabBarSettings.swift in Sources */,
+				3B3376402CC82BDC006BAF61 /* categoriaFlashcards.swift in Sources */,
+				3B33763C2CC81CE0006BAF61 /* tabBarAnotacao.swift in Sources */,
+				3B4DB7AD2CCAE33B00FB9D9B /* editCard.swift in Sources */,
+				3B6B56D42CD94B47009CB864 /* OnboardView.swift in Sources */,
+				3B8666082CD2B6B20074DD5F /* color.swift in Sources */,
+				3B617A972CE686F8000BA198 /* NotificacaoHandler.swift in Sources */,
+				3B617A952CE68693000BA198 /* permissaoNotificacao.swift in Sources */,
+				3B2CA19C2CC97BDA00D15A9E /* coresEscolha.swift in Sources */,
+				3B5852642CD15984007FA0B1 /* MeusFlashCardView.swift in Sources */,
+				4AE45A452CC6E6170084006A /* navBarMenu.swift in Sources */,
+				4AE45A3A2CC6E5500084006A /* SelecionarCategoriaView.swift in Sources */,
+				3B7626532CEFD93D0074BFA2 /* TextViewRepresentable.swift in Sources */,
+				3B5B5FB92CE3DE1600C1BF4E /* CustomTabBar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4AE45A2E2CC6E3BE0084006A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4AE45A2F2CC6E3BE0084006A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4AE45A312CC6E3BE0084006A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Mebbi/Mebbi.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mebbi/Preview Content\"";
+				DEVELOPMENT_TEAM = 4575535L2J;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Mebbi/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Este aplicativo precisa acessar a câmera para tirar fotos.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Este aplicativo precisa acessar a biblioteca de fotos para escolher imagens.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = grupo06.Mebbi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4AE45A322CC6E3BE0084006A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Mebbi/Mebbi.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mebbi/Preview Content\"";
+				DEVELOPMENT_TEAM = 4575535L2J;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Mebbi/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Este aplicativo precisa acessar a câmera para tirar fotos.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Este aplicativo precisa acessar a biblioteca de fotos para escolher imagens.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = grupo06.Mebbi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4AE45A162CC6E3BD0084006A /* Build configuration list for PBXProject "Mebbi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AE45A2E2CC6E3BE0084006A /* Debug */,
+				4AE45A2F2CC6E3BE0084006A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AE45A302CC6E3BE0084006A /* Build configuration list for PBXNativeTarget "Mebbi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AE45A312CC6E3BE0084006A /* Debug */,
+				4AE45A322CC6E3BE0084006A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4AE45A292CC6E3BE0084006A /* Mebbi.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4AE45A2A2CC6E3BE0084006A /* Mebbi.xcdatamodel */,
+			);
+			currentVersion = 4AE45A2A2CC6E3BE0084006A /* Mebbi.xcdatamodel */;
+			path = Mebbi.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4AE45A132CC6E3BD0084006A /* Project object */;
+}
