@@ -2,6 +2,7 @@ import SwiftUI
 
 @main
 struct MebbiApp: App {
+    @UIApplicationDelegateAdaptor (AppDelegate.self) var appDelegate
     @StateObject private var anotacaoManager = AnotacaoManager()
     @StateObject private var tabBarSettings = TabBarSettings()
     @StateObject private var colorSelection: ColorSelection = {
@@ -13,7 +14,6 @@ struct MebbiApp: App {
     
     init() {
         let _ = anotacaoManager
-        NotificationHandler.shared.checkAndScheduleNotifications(for: [])
     }
     
     var body: some Scene {
