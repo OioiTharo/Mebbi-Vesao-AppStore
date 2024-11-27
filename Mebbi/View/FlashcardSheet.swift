@@ -66,7 +66,7 @@ struct FlashCardSheet: View {
                         }
                     if answerText.count == maxCaracteres{
                         HStack{
-                            Text("Limite de caracteres por linha atingido")
+                            Text("Limite de caracteres por linha atingido, pule de linha")
                                 .foregroundColor(.red)
                                 .font(.caption2)
                                 .padding(.top,25)
