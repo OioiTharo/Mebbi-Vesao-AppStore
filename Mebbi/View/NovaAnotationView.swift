@@ -100,7 +100,7 @@ struct NovaAnotacaoView: View {
                 TextField("Insira o título", text: $tituloTemp)
                     .font(.title2)
                     .fontWeight(.bold)
-                    .foregroundColor(.azulPrincipal)
+                    .foregroundColor(.azulPrincipal.opacity(2.5))
                     .padding(.horizontal, 30)
                     .padding(.top)
                     .onChange(of: tituloTemp) { newValue in
@@ -267,7 +267,12 @@ struct NovaAnotacaoView: View {
         }
         .onChange(of: isPresented) { newValue in
             if !newValue {
-                presentationMode.wrappedValue.dismiss()
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.001) {
+                    presentationMode.wrappedValue.dismiss()
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.001) {
+                        presentationMode.wrappedValue.dismiss()
+                    }
+                }
             }
         }
     }

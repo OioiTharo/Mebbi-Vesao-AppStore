@@ -10,6 +10,14 @@ class NotificationHandler: NSObject, UNUserNotificationCenterDelegate {
         UNUserNotificationCenter.current().delegate = self
         requestNotificationPermission()
     }
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        // Aqui definimos como a notificação deve aparecer quando o app está aberto
+        completionHandler([.banner, .sound, .badge])
+    }
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        // Aqui você pode adicionar código para lidar com o toque na notificação
+        completionHandler()
+    }
 
     func requestNotificationPermission() {
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
@@ -38,8 +46,8 @@ class NotificationHandler: NSObject, UNUserNotificationCenterDelegate {
             content.sound = UNNotificationSound(named: UNNotificationSoundName("flipSound.mp3"))
 
             var dateComponents = DateComponents()
-            dateComponents.hour = 12
-            dateComponents.minute = 00
+            dateComponents.hour = 17
+            dateComponents.minute = 24
 
             let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
             let request = UNNotificationRequest(identifier: "daily_review_notification", content: content, trigger: trigger)

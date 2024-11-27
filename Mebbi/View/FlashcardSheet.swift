@@ -8,7 +8,16 @@ struct FlashCardSheet: View {
     @State private var editingCardCopy: FlashCard?
     @State private var questionText: String = ""
     @State private var answerText: String = ""
+    let maxCaracteres: Int = 32
     
+    func limitCharactersPerLine(_ input: String) -> String {
+            let lines = input.split(separator: "\n", omittingEmptySubsequences: false)
+            let limitedLines = lines.map { line in
+                line.prefix(maxCaracteres)
+            }
+            return limitedLines.joined(separator: "\n")
+        }
+
     var body: some View {
         NavigationStack {
             VStack {
@@ -20,8 +29,19 @@ struct FlashCardSheet: View {
                         .padding(.top,40)
                     Spacer()
                 }
-                TextField("Digite sua pergunta....", text: $questionText)
-                    .foregroundColor(.wb)
+                ZStack(alignment: .top){
+                    TextEditor(text: $questionText)
+                        .foregroundColor(.wb)
+                    if questionText.isEmpty {
+                        HStack{
+                            Text("Digite sua pergunta....")
+                                .foregroundColor(.wb.opacity(0.3))
+                                .padding(.top, 8)
+                                .padding(.leading, 2)
+                            Spacer()
+                        }
+                    }
+                }
                 Spacer()
             }
             .padding(.horizontal, 20)
@@ -38,8 +58,32 @@ struct FlashCardSheet: View {
                         .padding(.trailing, 5)
                     Spacer()
                 }
-                TextField("Digite sua resposta....", text: $answerText)
-                    .foregroundColor(.wb)
+                ZStack(alignment: .top){
+                    TextEditor(text: $answerText)
+                        .foregroundColor(.wb)
+                        .onChange(of: answerText){ newValue in
+                            answerText = limitCharactersPerLine(newValue)
+                        }
+                    if answerText.count == maxCaracteres{
+                        HStack{
+                            Text("Limite de caracteres por linha atingido")
+                                .foregroundColor(.red)
+                                .font(.caption2)
+                                .padding(.top,25)
+                                .padding(.leading, 6)
+                            Spacer()
+                        }
+                    }
+                    if answerText.isEmpty {
+                        HStack{
+                            Text("Digite sua resposta....")
+                                .foregroundColor(.wb.opacity(0.3))
+                                .padding(.top, 8)
+                                .padding(.leading, 2)
+                            Spacer()
+                        }
+                    }
+                }
                 Spacer()
             }
             .padding(.horizontal, 20)

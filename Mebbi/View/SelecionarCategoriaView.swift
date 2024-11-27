@@ -14,58 +14,74 @@ struct SelecionarCategoriaView: View {
             ZStack{
                 Color.background
                     .edgesIgnoringSafeArea(.all)
-                VStack {
-                    HStack {
-                        Text("Escolha sua categoria")
-                            .foregroundColor(.azulPrincipal)
-                            .bold()
+                
+                if categoriaStore.categorias.isEmpty {
+                    VStack{
+                        Spacer()
+                        Image("cateVazia")
+                            .resizable()
+                            .frame(width: 200, height: 200)
+                        Text("Crie uma categoria clicando no botão +")
+                            .foregroundColor(.textoVazio)
+                            .font(.body)
+                            .padding(.horizontal, 20)
+                            .padding(.top, 40)
                         Spacer()
                     }
-                    .padding(.horizontal, 20)
-                    
-                    LazyVStack {
-                        ForEach(categoriaStore.categorias.sorted(by: { $0.key < $1.key }), id: \.key) { key, categoria in
-                            HStack {
-                                if let color = Color(hex: categoria.cor) { // Convertendo a cor
-                                    let corAtual = categoria.cor
-                                    let rgb = corAtual.split(separator: ",").map { Double($0.trimmingCharacters(in: .whitespaces)) ?? 0.0 }
-                                    let color = Color(red: rgb[0] / 255, green: rgb[1] / 255, blue: rgb[2] / 255)
-                                    
-                                    Circle()
-                                        .fill(color)
-                                        .frame(width: 25)
-                                }
-                                
-                                ZStack {
-                                    Text(categoria.nome)
-                                        .font(.title3)
-                                        .foregroundColor(Color.azulPrincipal)
-                                        .padding(.leading)
-                                        .frame(maxWidth: .infinity, alignment: .leading)
-                                    
-                                    if categoria.nome == categoriaSelecionada {
-                                        let textSize = (categoria.nome as NSString).size(withAttributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20)])
-                                        HStack {
-                                            Rectangle()
-                                                .fill(Color.azulPrincipal.opacity(0.2))
-                                                .frame(width: textSize.width + 35, height: 40)
-                                                .cornerRadius(10)
-                                            Spacer()
-                                        }
+                } else {
+                    VStack {
+                        HStack {
+                            Text("Escolha sua categoria")
+                                .foregroundColor(.azulPrincipal)
+                                .bold()
+                            Spacer()
+                        }
+                        .padding(.horizontal, 20)
+                        
+                        LazyVStack {
+                            ForEach(categoriaStore.categorias.sorted(by: { $0.key < $1.key }), id: \.key) { key, categoria in
+                                HStack {
+                                    if let color = Color(hex: categoria.cor) { // Convertendo a cor
+                                        let corAtual = categoria.cor
+                                        let rgb = corAtual.split(separator: ",").map { Double($0.trimmingCharacters(in: .whitespaces)) ?? 0.0 }
+                                        let color = Color(red: rgb[0] / 255, green: rgb[1] / 255, blue: rgb[2] / 255)
+                                        
+                                        Circle()
+                                            .fill(color)
+                                            .frame(width: 25)
                                     }
-                                }.appBackground()
-                                .contentShape(Rectangle())
-                                .onTapGesture {
-                                    categoriaSelecionada = (categoriaSelecionada == categoria.nome) ? "Nenhuma" : categoria.nome
+                                    
+                                    ZStack {
+                                        Text(categoria.nome)
+                                            .font(.title3)
+                                            .foregroundColor(Color.azulPrincipal)
+                                            .padding(.leading)
+                                            .frame(maxWidth: .infinity, alignment: .leading)
+                                        
+                                        if categoria.nome == categoriaSelecionada {
+                                            let textSize = (categoria.nome as NSString).size(withAttributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20)])
+                                            HStack {
+                                                Rectangle()
+                                                    .fill(Color.azulPrincipal.opacity(0.2))
+                                                    .frame(width: textSize.width + 35, height: 40)
+                                                    .cornerRadius(10)
+                                                Spacer()
+                                            }
+                                        }
+                                    }.appBackground()
+                                        .contentShape(Rectangle())
+                                        .onTapGesture {
+                                            categoriaSelecionada = (categoriaSelecionada == categoria.nome) ? "Nenhuma" : categoria.nome
+                                        }
                                 }
                             }
-                        }
-                        .frame(height: 60)
-                        .listRowInsets(EdgeInsets(top: 8, leading: 20, bottom: 6, trailing: 20))
-                    }.padding(.horizontal,20)
-                    
-                    .listStyle(PlainListStyle())
-                    Spacer()
+                            .frame(height: 60)
+                            .listRowInsets(EdgeInsets(top: 8, leading: 20, bottom: 6, trailing: 20))
+                        }.padding(.horizontal,20)
+                        
+                            .listStyle(PlainListStyle())
+                        Spacer()
+                    }
                 }
             }
             .toolbar {

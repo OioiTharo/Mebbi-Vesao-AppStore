@@ -10,7 +10,7 @@ struct ReadOnlyTextView: UIViewRepresentable {
         textView.isSelectable = false
         textView.attributedText = attributedText
         textView.backgroundColor = .background
-        textView.textColor = .wb
+        textView.textColor = .azulPrincipal
         return textView
     }
     
@@ -27,6 +27,7 @@ struct VisualizarAnotacaoView: View {
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var tabBarSettings: TabBarSettings
     @Binding var path: NavigationPath
+    @State private var isPresented = true
     
     init(anotacao: Anotacao, excluirAnotacao: @escaping (Anotacao) -> Void, path: Binding<NavigationPath>) {
         self.anotacao = anotacao
@@ -47,7 +48,7 @@ struct VisualizarAnotacaoView: View {
                 Text(anotacao.titulo)
                     .font(.title2)
                     .fontWeight(.bold)
-                    .foregroundColor(.azulPrincipal)
+                    .foregroundColor(.azulPrincipal.opacity(2.5))
                     .padding(.top)
                     .padding(.horizontal, 30)
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -119,5 +120,6 @@ struct VisualizarAnotacaoView: View {
                     tabBarSettings.restorePreviousState()
                 }
             }
+            
     }
 }

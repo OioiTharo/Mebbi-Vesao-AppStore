@@ -205,6 +205,7 @@ struct DetalhesView: View {
                     datasRevisao: datasRevisao
                 )
                 try anotacaoManager.atualizarAnotacao(updatedAnotacao)
+                
             } else {
                 let novaAnotacao = Anotacao(
                     id: UUID(),
@@ -217,6 +218,7 @@ struct DetalhesView: View {
                     datasRevisao: datasRevisao
                 )
                 try anotacaoManager.adicionarAnotacao(novaAnotacao)
+                
             }
             
             path.removeLast(path.count)

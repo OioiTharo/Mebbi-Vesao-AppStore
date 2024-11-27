@@ -20,7 +20,7 @@ struct TextViewRepresentable: UIViewRepresentable {
         textView.delegate = context.coordinator
         textView.font = .systemFont(ofSize: 16)
         textView.backgroundColor = .background
-        textView.textColor = .wb
+        textView.textColor = .azulPrincipal
         textView.isEditable = true
         textView.isSelectable = true
         textView.isUserInteractionEnabled = true

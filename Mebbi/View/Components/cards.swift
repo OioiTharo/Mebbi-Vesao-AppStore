@@ -105,13 +105,14 @@ struct Cards: View {
                                 .scaleEffect(x: -1, y: 1)
                                 .font(.headline)
                                 .foregroundColor(.white)
-                                .padding(.horizontal,5)
+                                .padding(.horizontal,10)
+                                .fixedSize(horizontal: false, vertical: true)
                             Spacer()
                             Text("Toque no cartão para ver a pergunta")
                                 .scaleEffect(x: -1, y: 1)
                                 .font(.caption)
                                 .foregroundColor(.white.opacity(0.5))
-                                .padding(.bottom, 30)
+                                .padding(.bottom, 30 )
                         }
                     )
             }

@@ -19,16 +19,18 @@ struct ListCard: View {
     var body: some View {
         if filteredCards.isEmpty {
             VStack {
-                Text("Nenhum cartão disponível")
-                    .foregroundColor(.gray)
-                    .padding(.top, 150)
                 Spacer()
-                Image("ebbi2")
+                Image("cardVazio")
                     .resizable()
-                    .scaledToFit()
-                    .frame(width: 150)
-                    .opacity(0.25)
-            }
+                    .frame(width: 250, height: 200)
+                Text("Crie flashcards clicando no botão +")
+                    .foregroundColor(.textoVazio)
+                    .font(.body)
+                    .padding(.horizontal, 20)
+                    .padding(.top, 40)
+                Spacer()
+                
+            }.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
         } else {
             VStack {
                 HStack {
